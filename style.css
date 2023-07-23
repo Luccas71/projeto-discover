@@ -23,11 +23,15 @@
     --switch-bg-url: url('./assets/sun.svg');
 
 }
+.light body {
+    transition: background 0.5s;
+}
 
 body {
     /* background: color image repeat position/size; */
     background: var(--bg-url) no-repeat top center/cover;
     height: 100vh;
+    transition: background 0.5s;
 }
 
 /* para selecionar todos elementos dentro do body (*) */
@@ -86,7 +90,7 @@ body * {
 
     transform: translateY(-50%);
 
-    animation: slide-back 0.2s;
+    animation: slide-back 0.5s;
 }
 
 #switch button:hover {
@@ -94,7 +98,7 @@ body * {
 } 
 
 .light #switch button {
-    animation: slide-in 0.2s forwards;
+    animation: slide-in 0.5s forwards;
 }
 
 #switch span {
